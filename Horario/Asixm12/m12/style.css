@@ -1,0 +1,18 @@
+button.volver-al-uf,
+button.volver-al-horario {
+    display: inline-block;
+    padding: 3px 3px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid black;
+    transition: background-color 0.2s, transform 0.2s;
+    color: black;
+    text-decoration: none;
+}
+
+button.volver-al-uf:hover,
+button.volver-al-horario:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+

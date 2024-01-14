@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 60%; 
+    height: 50%;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 1; /
+}
+th, td {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(rgba(155, 136, 136, 0.9), rgba(177, 158, 158, 0.9)); 
+    transition: transform 0.2s;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+th:hover, td:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(97, 87, 87, 0.7), rgba(116, 106, 106, 0.7));
+    transition: transform 0.2s;
+}
+
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+a,
+a:visited {
+    color: black; 
+    text-decoration: none;
+}
+a:hover,
+a:visited:hover {
+            color: white; 
+}
