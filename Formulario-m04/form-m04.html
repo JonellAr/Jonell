@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form04.css">
+    <title>Encuesta profesores</title>
+</head>
+<body>
+    <h1>ENCUESTA DE PROFESORES</h1>
+    <form action="ejemplo.php" method="get" id="Form1">
+    <fieldset class="datos">
+    <legend><b><u>DATOS PERSONALES</u></b></legend>
+    <p>Edad* <br><input type="number" name="edad" size="30" required placeholder="Escribe tu edad"></p>
+    <p>Email <br><input type="email" name="email" size="90"> </p>
+    <p>Contraseña* <br><input type="password" name="contraseña" size="90" required></p>
+    <p>Fecha de nacimiento <br><input type="date"></p>
+    <p><i>* Campos obligatorios</i></p>
+    </fieldset>
+
+    <fieldset class="modulo">
+        <legend><b><u>Modulos a evaluar</u></b></legend>
+        <select name="menu">
+            <option>M01</option>
+            <option>M02</option>
+            <option>M03</option>
+            <option>M04</option>
+            <option>M05</option>
+            <option>M12</option>
+            <option>M13</option>
+            <option>Tutoria</option>
+        </select>
+    </fieldset>
+
+    <fieldset class="cicle">
+        <legend><b><u>Cicle</u></b></legend>
+        <input type="radio" name="boton" value="1">ASIX
+        <input type="radio" name="boton" value="2">DAM
+        <input type="radio" name="boton" value="3">DAW
+        <input type="radio" name="boton" value="4">BIOINFORMATICA
+    </fieldset>
+    <fieldset class="profesor">
+        <legend><b><u>Profesor a evaluar</u></b></legend>
+        <p>Nombre del profesor* <br><input type="text" name="profe" size="90" required placeholder="Escribe el nombre"></p>
+        Grado de satisfacción del 0 al 10<br>
+        <input type="range" name="satisfaccion" min="0" max="10" step="1">
+        <p>Comentarios</p>
+        <textarea name="texto" rows="4" cols="90" placeholder="Inserte los comentarios"></textarea>
+    </fieldset>
+    <fieldset class="info">
+        <legend><b><u>Explica alguna cosa sobre ti</u></b></legend>
+        <p>¿Eres repetidor?</p>
+        <input type="checkbox" name="check" value="Si" onclick="deseleccionar(this)">Si
+        <input type="checkbox" name="check" value="No" onclick="deseleccionar(this)">No
+        <p>Color preferido</p>
+        <input type="color" name="ColorFavo">
+        <p>Dirección web</p>
+        <input type="url" name="web" size="90">
+        <p>Situación actual</p>
+        <select name="menu">
+            <option>Estudios</option>
+            <option>FCT</option>
+            <option>Dual</option>
+            <option>Estudios-FCT</option>
+            <option>Trabajo-Estudios</option>
+        </select>    
+        <p><input type="file" name="archivo"></p>
+        
+    </fieldset>
+    <fieldset class="extra">
+        <legend><u><b>CURSOS EXTRAS</u></b></legend>
+        <input type="checkbox" name="curso" value="1">Cloud computing
+        <input type="checkbox" name="curso" value="2">Big data
+        <input type="checkbox" name="curso" value="3">Unity 5
+    </fieldset>
+    <fieldset class="encuesta">
+        <legend><u><b>FECHA DE ENCUESTA</u></b></legend>
+        Fecha <input type="date">
+        Hora <input type="time" name="hora">
+    </fieldset>
+    <fieldset class="botones">
+        <input type="submit" value="Submit" onclick="confirm()">
+        <input type="reset" value="Reset">
+        <input type="button" value="Salir" onclick="window.close()">
+    </fieldset>
+    </form>
+    <script>
+        function confirm() {
+        var edadInput = document.getElementsByName('edad')[0];
+        var nombreProfesorInput = document.getElementsByName('profe')[0];
+        var contraseñaInput = document.getElementsByName('contraseña')[0];
+        
+        if (edadInput.checkValidity() && nombreProfesorInput.checkValidity() && contraseñaInput.checkValidity()) {
+            alert("Respuesta enviada. ¡Gracias por participar en la encuesta!");
+            document.getElementById("Form1").reset();
+        } else {
+            var errorMessage = "Por favor, completa los campos obligatorios:\n";
+            if (!edadInput.checkValidity()) {
+                errorMessage += "- Edad\n";
+            }
+            if (!nombreProfesorInput.checkValidity()) {
+                errorMessage += "- Nombre del profesor\n";
+            }
+            if (!contraseñaInput.checkValidity()) {
+                errorMessage += "- Contraseña\n";
+            }
+            alert(errorMessage);
+        }
+    }
+
+    function deseleccionar(checkbox) {
+        var checkboxes = document.getElementsByName('check');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] !== checkbox) {
+                checkboxes[i].checked = false;
+            }
+        }
+    }
+        </script>
+</body>
+</html>

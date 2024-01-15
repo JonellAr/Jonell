@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/Tipos.css">
+    <title>Zapatillas Mujer</title>
+</head>
+<body>
+    <input class="casilla-texto" type="text" name="texto" placeholder="Buscar" size="180">
+    <div class="bienvenida">BIENVENIDO / INICIA SESIÓN</div>
+    <a href="https://www.proven.cat/intraweb/index.php" target="_blank">
+        <div class="logo">
+            <img src="./zapatillasfts/logo.jpeg" alt="Logo">
+        </div>
+    </a>
+    
+    
+    
+    <div id="barra-navegacion">
+        <ul>
+            <li> Mujer
+                <ul class="submenu">
+                    
+                    <li> Mujer WK </li>
+                    <li> Marcas </li>
+
+                </ul>
+            </li>
+        <li>Hombres
+            <ul class="submenu">
+                <li>Hombre WK</li>
+                <li>Marcas</li>
+
+            </ul>
+        </li>
+        <li> Niños/a
+            <ul class="submenu">
+                <li> Niño/a WK</li>
+                <li> Marcas </li>
+            </ul>
+        </li>
+        </ul>
+        </div>
+        
+        <script>
+            const submenuItems = document.querySelectorAll("#barra-navegacion .submenu");
+            submenuItems.forEach((item) => {
+                item.parentElement.addEventListener("mouseenter",() => {
+                    item.style.display = "block";
+            });
+            
+            item.parentElement.addEventListener("mouseleave",() => {
+                item.style.display = "none";
+            });
+        });
+
+
+        </script>
+
+<div class = "inicio">
+    ZAPATILLAS DE MUJER :<br>
+    El diseño que tienen las zapatillas de mujer hará que 
+    proyectes un estilo propio al mundo que te rodea.
+</div>
+
+<div class = "precio-1">
+    <h8>119,99€<br>
+        Nike Air Force 1'07</h8>
+</div>
+<div class = "precio-2">
+    <h8>110,00€<br>
+    Vans Knu Stack</h8>
+</div>
+<div class = "precio-3">
+    <h8>140,00€<br>
+    NB 550</h8>
+</div>
+<div class = "precio-4">
+    <h8>110,00€<br>
+    Adidas Handball Spezial</h8>
+</div>
+
+<img src="./zapatillasfts/NIKE3.png" alt="hola" class="img1">
+<img src="./zapatillasfts/MUJER-2.png" alt="hola" class="img2">
+<img src="./zapatillasfts/MUJER-5.png" alt="hola" class="New-2002">
+<img src="./zapatillasfts/MUJER-6.png" alt="hola" class="img4">
+
+</body>
+</html>

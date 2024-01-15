@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/zapatilla.css">
+    <link rel="icon" type="image/png" href="../zapatillasfts/logito2.png">
+    <title>Walkando ando</title>
+
+</head>
+
+<body>
+    
+    <div class="bienvenida">BIENVENIDO / INICIA SESIÓN</div>
+    
+    <div class="logo">
+        <a href="https://www.proven.cat/intraweb/index.php" target="_blank">
+            <img src="./zapatillasfts/logo.jpeg" alt="Logo">
+        </a>
+    </div>
+   
+    <div class="background-image">
+        <div class="background-image-text">
+            Los<br>Favoritos para este<br>Otoño
+        </div>
+        <img src="./zapatillasfts/otoño7.png" alt="Tu Imagen">
+    </div> 
+    
+    <div id="centro-de-pagina">
+        <div class="imagen-contenedor">
+            <a href="Adidas.html" target="_blank">
+            <img src="./zapatillasfts/samba.jpeg" alt="Adidas - Samba" class="imagen samba-img">
+            <div class="overlay">
+              
+            </div>
+        </a>
+        </div>
+        <input class="casilla-texto" type="text" name="texto" placeholder="Buscar" size="160">
+        <div class="imagen-contenedor">
+    <a href="Vans.html" target="_blank">
+        <img src="./zapatillasfts/vans.png" alt="Vans" class="imagen vans-img">
+        <div class="overlay">
+           
+        </div>
+    </a>
+</div>
+    
+        <div class="imagen-contenedor">
+            <a href = "Nike.html" target="_blank">
+            <img src="./zapatillasfts/nikes.png" alt="Nike" class="imagen nikes-img">
+            <div class="overlay">
+            
+            </div>
+            </a>
+        </div>
+    
+        <div class="imagen-contenedor">
+            <a href = "NewBalance.html" target = "_blank"> 
+            <img src="./zapatillasfts/newbalance.png" alt="New Balance" class="imagen new-img">
+            <div class="overlay">
+               
+            </div>
+            </a>
+        </div>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    <div id="barra-navegacion">
+        <ul>
+            <li> Mujer
+                <ul class="submenu">
+                    <a href="Mujer.html" target="_blank">
+                        <li> Mujer WK </li>
+                    </a>
+                    <li> <a href="#centro-de-pagina">Marcas</a></li> <!-- Enlace a la sección del centro de la página -->
+                </ul>
+            </li>
+        <li>Hombres
+            <ul class="submenu">
+                <a href="Hombre.html" target="_blank">
+                 <li> Hombre WK</li>
+                </a>
+                <li> <a href="#centro-de-pagina">Marcas</a></li>
+
+            </ul>
+        </li>
+        <li> Niños/a
+            <ul class="submenu">
+                <a href="Niño.html" target="_blank">
+                <li> Niño/a WK</li>
+                </a>
+                <li> <a href="#centro-de-pagina">Marcas</a></li>
+            </ul>
+        </li>
+        </ul>
+        <li>Contáctanos
+            <ul class="submenu">
+                <a href="formulario.html" target="_blank">
+                </a>
+            </ul>
+        </li>
+        </ul>
+        </div>
+        
+        <script>
+            const submenuItems = document.querySelectorAll("#barra-navegacion .submenu");
+            submenuItems.forEach((item) => {
+                item.parentElement.addEventListener("mouseenter",() => {
+                    item.style.display = "block";
+            });
+            
+            item.parentElement.addEventListener("mouseleave",() => {
+                item.style.display = "none";
+            });
+        });
+
+
+        </script>
+    
+
+   
+
+    
+    <div class="imagen-contenedor">
+        <a href="Mujer.html" target="_blank">
+            <img src="./zapatillasfts/chica.jpeg" alt="Chica" class="imagen-chica"> 
+            <div class="overlay"></div>
+        </a>
+    </div>
+    
+    <div class="imagen-contenedor">
+        <a href="Hombre.html" target="_blank">
+            <img src="./zapatillasfts/chico.jpeg" alt="Chico" class="imagen-chico"> 
+            <div class="overlay"></div>
+        </a>
+    </div>
+    
+    <div class="imagen-contenedor">
+        <a href="Niño.html" target="_blank">
+            <img src="./zapatillasfts/niño.jpeg" alt="Niño" class="imagen-niño"> 
+            <div class="overlay"></div>
+        </a>
+    </div>
+    
+    
+</body>
+
+</html>

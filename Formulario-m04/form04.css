@@ -1,0 +1,54 @@
+.datos {
+    background-color: #69D5E2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.info {
+    background-color: #A19191;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.modulo {
+    background-color: #FDB6C1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+form {
+    font-family: Arial;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid red;
+    background-color: #FFFFFF;
+}
+.cicle {
+    background-color: #FED700;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.botones {
+    background-color: #3A3839;
+    padding: 20px;
+    margin-bottom: 20px;
+}    
+.profesor {
+    background-color: #008001;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.extra {
+    background-color: #F46E17;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.encuesta {
+    background-color: #C74D4C;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Actividad 1</title>
+    <style>
+        body {
+            background-color: black;
+				color: white;
+            font-family: courier;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+			}
+        .browser-container {
+            margin: 20px;
+				text-align: center;
+            display: inline-block;
+				vertical-align: top;
+            width: 45%;
+            position: relative; 
+      }
+        .browser-container h2 {
+            margin-top: 0;
+       }
+        .browser-container img {
+            max-width: 200px;
+				display: block;
+            margin: 0 auto;
+            
+       
+			}
+        .top-browsers {
+            display: flex;
+				justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+        .go-to-link {
+            position: relative;
+        }
+        .hover-text {
+            position: absolute;
+			top: 50%;
+            left: 50%;
+			transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+		border-radius: 5px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        .go-to-link:hover .hover-text {
+            opacity: 1;
+        }
+		 a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actividad 1</h1>
+    
+    <div class="top-browsers">
+        <div class="browser-container">
+            <h2>Google Chrome</h2>
+            <p> <a href="https://www.google.com" target="_blank">https://www.google.com</a></p>
+            <a href="https://www.google.com" target="_blank" class="go-to-link"> 
+                <img src="./imagenes/GoogleChrome.png" alt="Google Chrome Logo">
+                <span class="hover-text">Go to Google Chrome</span> 
+            </a>
+			</div>
+
+        <div class="browser-container">
+            <h2>Safari</h2>
+            <p> <a href="https://www.apple.com/safari/" target="_blank">https://www.apple.com/safari/</a></p>
+            <a href="https://www.apple.com/safari/" target="_blank" class="go-to-link">
+                <img src="./imagenes/safari.jpeg" alt="Safari Logo">
+                <span class="hover-text">Go to Safari</span>
+            </a>
+	</div>
+    </div>
+    
+    <div class="browser-container">
+        <h2>Mozilla Firefox</h2>
+        <p><a href="https://www.mozilla.org" target="_blank">https://www.mozilla.org</a></p>
+        <a href="https://www.mozilla.org" target="_blank" class="go-to-link">
+            <img src="./imagenes/firefox.png" alt="Mozilla Firefox Logo">
+            <span class="hover-text">Go to Mozilla Firefox</span>
+			</a>
+		</div>
+    
+			<div class="browser-container">
+        <h2>Microsoft Edge</h2>
+        <p><a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">https://www.microsoft.com/en-us/windows/microsoft-edge</a></p>
+        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" 	target="_blank" class="go-to-link">
+            <img src="./imagenes/Microsoft Edgeaa.png"alt="Microsoft Edge Logo">
+            <span class="hover-text">Go to Microsoft Edge</span>
+        </a>
+    </div>
+
+		<div class="browser-container">
+        <h2>Brave</h2>
+        <p> <a href="https://brave.com/" target="_blank">https://brave.com/</a>	</p>
+        <a href="https://brave.com/" target="_blank" class="go-to-link">
+				<img src="./imagenes/brave.png" alt="brave Logo">
+            <span class="hover-text">Go to Brave</span>
+			</a>
+    </div>
+
+    <div class="browser-container">
+        <h2>Vivaldi</h2>
+        <p> <a href="https://vivaldi.com/" target="_blank">https://vivaldi.com/</a></p>
+        <a href="https://vivaldi.com/" target="_blank" class="go-to-link">
+				<img src="./imagenes/vivaldi.jpeg" alt="Vivaldi Logo">
+            <span class="hover-text">Go to Vivaldi</span>
+        </a>
+    </div>
+
+		<div class="footer">
+			Creado por Jonell
+    </div>
+
+	</body>
+ </html>

@@ -1,0 +1,41 @@
+    function confirm() {
+            var NombreInput = document.getElementsByName('Nombre')[0];
+            var EmailInput = document.getElementsByName('Email')[0];
+            var TeléfonoInput = document.getElementsByName('Teléfono')[0];
+            
+            if (NombreInput.checkValidity() && EmailInput.checkValidity() && TeléfonoInput.checkValidity()) {
+                alert("Respuesta enviada. ¡Gracias por  completar el formulario!");
+		document.getElementById("formulario").reset();   
+            } else {
+                var errorMessage = "Por favor, completa los campos obligatorios:\n";
+                if (!NombreInput.checkValidity()) {
+                    errorMessage += "- Nombre\n";
+                }
+                if (!EmailInput.checkValidity()) {
+                    errorMessage += "- Email\n";
+                }
+                if (!TeléfonoInput.checkValidity()) {
+                    errorMessage += "- Teléfono\n";
+                }
+                alert(errorMessage);
+            }
+        }
+
+
+
+
+              <div class="info">
+                <img src="./zapatillasfts/logo.jpeg" class="logo" alt="">
+            
+              </div>
+
+
+
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 150 px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #FFFFFF;
+}

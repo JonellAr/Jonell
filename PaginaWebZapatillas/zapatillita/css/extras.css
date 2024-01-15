@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+   
+    left: 40px;
+    
+}
+
+.logo img {
+    width: 95px;
+    
+    height: auto;
+    
+}
+
+
+
+
+#barra-navegacion {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+    
+    left: 0;
+    right: 0;
+}
+
+#barra-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#barra-navegacion li {
+    padding: 15px 20px;
+    color: #fff;
+}
+
+#barra-navegacion li:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+#barra-navegacion .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 200 px;
+}
+
+#barra-navegacion .submenu li {
+    padding: 10px;
+}
+
+#barra-navegacion .submenu li:hover {
+    background-color: #000000;
+}
+
+.casilla-texto {
+    position: absolute;
+    top: 50px;
+    left: 47%;
+    
+    transform: translateX(-50%);
+    /* Ajusta la posición horizontal para centraaar */
+    padding: 10px;
+    background-color: white;
+}
+
+.bienvenida {
+    position: absolute;
+    top: 60px;
+   
+    right: 60px;
+   
+    color: rgb(5, 5, 5);
+}
+
+.img1 {
+    width: 22%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+
+}
+
+.img2 {
+    width: 20%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+
+.img3 {
+    width: 22%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    
+}
+
+.img4 {
+    width: 21%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 60%;
+}
+
+
+
+.Nike-Air {
+    width: 21%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 42%;
+    left: 60%;
+}
+
+
+
+.Nike-4 {
+    width: 20%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 60%;
+}
+
+
+.New {
+    width: 18%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+
+}
+
+.New-550 {
+    width: 19%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+
+.New-2002 {
+    width: 20%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 83%;
+    left: 20%;
+}
+
+.New-9060 {
+    width: 21%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 83%;
+    left: 60%;
+}
+
+
+.inicio {
+    position: absolute;
+    top: 24.5%;
+    left: 3%;
+    font-size: 2vw;
+
+}
+
+.precio-1 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    font-size: 1.5vw;
+}
+
+.precio-2 {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    font-size: 1.5vw;
+}
+
+.precio-3 {
+    position: absolute;
+    top: 112%;
+    left: 20%;
+    font-size: 1.5vw;
+}
+
+.precio-4 {
+    position: absolute;
+    top: 112%;
+    left: 60%;
+    font-size: 1.5vw;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.Nike-Air:hover,
+.Nike-4:hover,
+.New:hover,
+.New-550:hover,
+.New-2002:hover,
+.New-9060:hover {
+   
+    transform: scale(1.1); 
+}

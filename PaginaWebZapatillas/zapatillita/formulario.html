@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/Tipos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <input class="casilla-texto" type="text" name="texto" placeholder="Buscar" size="180">
+    <div class="bienvenida">BIENVENIDO / INICIA SESIÓN</div>
+    <a href="Inicio.html" target="_blank">
+        <div class="logo">
+            <img src="./zapatillasfts/logo.jpeg" alt="Logo">
+        </div>
+    </a>
+    
+    
+    
+    <div id="barra-navegacion">
+        <ul>
+            <li> Mujer
+                <ul class="submenu">
+                    
+                    <li> Mujer WK </li>
+                    <li> Marcas </li>
+
+                </ul>
+            </li>
+        <li>Hombres
+            <ul class="submenu">
+                <li>Hombre WK</li>
+                <li>Marcas</li>
+
+            </ul>
+        </li>
+        <li> Niños/a
+            <ul class="submenu">
+                <li> Niño/a WK</li>
+                <li> Marcas </li>
+            </ul>
+        </li>
+        </ul>
+        </div>
+
+        <div class="container">
+        <form action="ejemplo.php" method="get" id="formulario">
+            <legend><b><u>Ponte en contacto con nosotros</b></u></legend>
+            <p>Nombre: </p><input type="text" name="nombre" size="50">
+            <p>Email: </p><input type="email" name="email" size="50">
+            <p>Teléfono: </p><input type="tel" name="teléfono" size="50">
+            <p>Sexo: <input type="checkbox" name="check" value="Si" onclick="deseleccionar(this)">Femenino
+            <input type="checkbox" name="check" value="No" onclick="deseleccionar(this)">Masculino</p>
+            <p>Ciudad: <input type="radio" name="boton" value="1">Barcelona <input type="radio" name="boton" value="2">Valencia <input type="radio" name="boton" value="3">Madrid</p>
+            <p>Marca: <select name="menu">
+                <option>Nike</option>
+                <option>Adidas</option>
+                <option>New Balance</option>
+                <option>Vans</option>
+                </select></p>
+            <p>Mensaje:</p>
+            <textarea name="texto" rows="4" cols="50" placeholder="Inserte su mensaje"></textarea>
+            <div class="botform">
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Reset">
+            </div>
+            </form>
+            <img src="./zapatillasfts/logo.jpeg" class="logoform" alt="">
+        </div>
+
+          
+        <script>
+            const submenuItems = document.querySelectorAll("#barra-navegacion .submenu");
+            submenuItems.forEach((item) => {
+                item.parentElement.addEventListener("mouseenter",() => {
+                    item.style.display = "block";
+            });
+            
+            item.parentElement.addEventListener("mouseleave",() => {
+                item.style.display = "none";
+            });
+        });
+
+
+        function deseleccionar(checkbox) {
+                      var checkboxes = document.getElementsByName('check');
+                      for (var i = 0; i < checkboxes.length; i++) {
+                          if (checkboxes[i] !== checkbox) {
+                              checkboxes[i].checked = false;
+                          }
+                      }
+                  }
+
+        </script>
+</body>
+</html>

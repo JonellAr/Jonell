@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/Tipos.css">
+    <title>Zapatillas Niño/a</title>
+</head>
+<body>
+    <input class="casilla-texto" type="text" name="texto" placeholder="Buscar" size="180">
+    <div class="bienvenida">BIENVENIDO / INICIA SESIÓN</div>
+    <a href="https://www.proven.cat/intraweb/index.php" target="_blank">
+        <div class="logo">
+            <img src="./zapatillasfts/logo.jpeg" alt="Logo">
+        </div>
+    </a>
+    
+    
+    
+    <div id="barra-navegacion">
+        <ul>
+            <li> Mujer
+                <ul class="submenu">
+                    
+                    <li> Mujer WK </li>
+                    <li> Marcas </li>
+
+                </ul>
+            </li>
+        <li>Hombres
+            <ul class="submenu">
+                <li>Hombre WK</li>
+                <li>Marcas</li>
+
+            </ul>
+        </li>
+        <li> Niños/a
+            <ul class="submenu">
+                <li> Niño/a WK</li>
+                <li> Marcas </li>
+            </ul>
+        </li>
+        </ul>
+        </div>
+        
+        <script>
+            const submenuItems = document.querySelectorAll("#barra-navegacion .submenu");
+            submenuItems.forEach((item) => {
+                item.parentElement.addEventListener("mouseenter",() => {
+                    item.style.display = "block";
+            });
+            
+            item.parentElement.addEventListener("mouseleave",() => {
+                item.style.display = "none";
+            });
+        });
+
+
+        </script>
+
+<div class = "inicio">
+    ZAPATILLAS DE NIÑO/A :<br>
+    Las zapatillas de hombre están diseñadas para poder expresar tu estilo personal cuando caminas por la 
+    calle.
+</div>
+
+<div class = "precio-1">
+    <h8>60,00€<br>
+        Vans sk8.Mid</h8>
+</div>
+<div class = "precio-2">
+    <h8>80,00€<br>
+        Adidas SuperStar XLG</h8>
+</div>
+<div class = "precio-3">
+    <h8>94,99€<br>
+        Nike Dunk Low</h8>
+</div>
+<div class = "precio-4">
+    <h8>80,00€<br>
+        NB 550</h8>
+</div>
+
+<img src="./zapatillasfts/NIÑO1.png" alt="hola" class="img1">
+<img src="./zapatillasfts/NIÑO2.png" alt="hola" class="Nike-Air">
+<img src="./zapatillasfts/NIÑO3.png" alt="hola" class="img3">
+<img src="./zapatillasfts/NIÑO4.png" alt="hola" class="Nike-4">
+
+</body>
+</html>
